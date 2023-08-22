@@ -1,0 +1,667 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Gloock", serif;
+  src: url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
+  font-family: "Noto Sans KR", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+}
+
+/*
+전체에 해당 부분
+*/
+body {
+  margin: 0;
+  /* background-color: #222; */
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+main {
+  width: 600px;
+  text-align: center;
+  padding-top: 100px;
+  margin: 0px auto;
+}
+section {
+  width: 600px;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+li {
+  list-style: none;
+}
+ul {
+  padding-inline-start: 0px;
+  margin: 0;
+}
+h1 {
+  margin: 30px auto;
+  font-family: "Gloock", serif;
+  font-style: italic;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+h3 {
+  margin: 0px;
+  color: #222;
+  font-weight: bold;
+  text-align: left;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+}
+h4 {
+  color: #444;
+  font-weight: 700;
+  text-align: left;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  margin: 0px;
+}
+h5 {
+  color: #777;
+  font-weight: 500;
+  text-align: left;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  margin: 0px;
+}
+/*
+header
+*/
+header {
+  width: 100%;
+  padding: 30px 65px;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+header * {
+  float: left;
+}
+.top-menu {
+  margin: 11px 50px 0px;
+}
+.logo {
+  width: 120px;
+  height: 40px;
+  background-image: url(../img/logo\ bk.png);
+}
+.top-menu a {
+  width: 50px;
+  height: 20px;
+  margin-left: 20px;
+  background-image: url(../img/KakaoTalk_20230220_203049440.png);
+  background-position: -26px -37px;
+  background-size: 400px;
+}
+.top-menu li:nth-child(2) a {
+  margin-left: 30px;
+  background-position-x: -230px;
+}
+header .toggle a:first-child {
+  width: 90px;
+  margin: 10px;
+  background-position: -58px -32px;
+  background-size: 350px;
+}
+.toggle li:last-child a {
+  background-position-x: -162px;
+}
+
+.toggle {
+  width: 110px;
+  height: 80px;
+  left: inherit;
+  top: 100px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  display: none;
+}
+.top-menu a:hover {
+  background-position-y: -66px;
+}
+.toggle a:first-child:hover {
+  background-position-y: -57px;
+}
+
+/*
+
+footer
+
+*/
+footer {
+  text-align: center;
+  background-color: #eee;
+  padding: 20px;
+  font-family: "Gloock", serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
+/*
+
+index main
+
+*/
+
+/* slider*/
+.home {
+  padding-top: 100px;
+  width: 1024px;
+  margin: 0px auto;
+}
+
+.home section:first-child {
+  width: 100%;
+  max-height: 400px;
+  overflow-y: hidden;
+}
+.slider img {
+  width: inherit;
+  height: 540px;
+}
+/* section */
+
+.multi {
+  width: 978px;
+  margin: 70px 0px 70px 50px;
+}
+.multi2,
+.multi3 {
+  width: 600px;
+  margin: 70px auto;
+}
+/* new */
+.new {
+  width: 600px;
+  margin: 0px;
+  display: inline-block;
+}
+.new img {
+  width: 100px;
+  height: 150px;
+}
+.text-wrap {
+  width: 180px;
+  height: 150px;
+  float: left;
+  margin: 0px 10px 30px;
+}
+.img-wrap {
+  width: 100px;
+  float: left;
+}
+.new div > * {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.new h5 {
+  margin-top: 65px;
+}
+
+/* aside */
+aside {
+  width: 278px;
+  height: 360px;
+  margin-top: 0px;
+  margin-right: 50px;
+  float: right;
+  display: inline;
+}
+.box {
+  width: 200px;
+  height: 140px;
+  margin: 55px auto 0px;
+  background-image: url(../img/guitar.png);
+  background-size: 160px;
+  background-repeat: no-repeat;
+}
+.box h1 {
+  padding: 34px 55px 35px 0px;
+  color: white;
+  text-align: left;
+  transform: rotate(-40deg);
+}
+
+aside h1 {
+  text-align: right;
+  font-size: 15px;
+  margin: 10px 5px;
+  color: rgb(63, 39, 195);
+}
+
+aside div {
+  margin: 82px auto;
+}
+
+.mypage-button h1 {
+  font-size: 20px;
+  color: rgb(63, 39, 195);
+}
+/* best */
+
+.best img {
+  width: 160px;
+  height: 210px;
+}
+.best div {
+  float: left;
+  width: 200px;
+}
+.best h3,
+.best h4,
+.best h5 {
+  padding: 0 20px;
+}
+.best h3 {
+  margin-top: 20px;
+}
+
+/* concert */
+
+.concert img {
+  width: 600px;
+  height: 200px;
+}
+.concert h4,
+.concert h5 {
+  text-align: center;
+  margin: 20px;
+}
+
+/*
+
+notice
+
+*/
+
+/* list-header */
+.list-header select {
+  float: left;
+  margin-top: 22px;
+  width: 87px;
+  height: 30px;
+  padding-left: 2px;
+  text-align: left;
+  font-size: 12px;
+}
+.list-header div {
+  height: 80px;
+  margin-top: 55px;
+}
+body .option {
+  width: 138px;
+  height: 20px;
+  float: right;
+  text-align: right;
+  margin: -6px 10px;
+}
+.search > * {
+  float: right;
+}
+.search input,
+select {
+  width: 61px;
+  height: 30px;
+  background-color: white;
+  color: #222;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  text-align: right;
+  border-radius: 5px;
+  border: #777 1px solid;
+  line-height: 5px;
+}
+.search input::placeholder {
+  color: #777;
+  font-weight: 500;
+  text-align: right;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+}
+.search input:focus {
+  background-color: rgb(25, 32, 108);
+  color: white;
+}
+.search input:focus::placeholder {
+  color: white;
+}
+.search button {
+  margin: 3px 5px 0px;
+  background-color: unset;
+  border: none;
+  font-size: 20px;
+  color: rgb(25, 32, 108);
+}
+
+/* list */
+.list {
+  padding: 10px;
+  height: 40px;
+  border-bottom: #ccc solid 1px;
+}
+.list:first-child {
+  border-top: #ccc solid 1px;
+}
+.list h4 {
+  margin-top: 5px;
+  float: left;
+  font-size: 16px;
+}
+
+.list h5,
+.list h3 {
+  float: right;
+}
+.list h5 {
+  font-size: 12px;
+}
+
+.list h3 {
+  color: rgb(25, 32, 108);
+}
+
+/* page */
+
+.next,
+.prev {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+.prev {
+  transform: scaleX(-1);
+}
+.page h4 {
+  text-align: center;
+}
+.page div {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin: 20px 7px 50px;
+}
+body .active {
+  height: 40px;
+  width: 40px;
+
+  border-radius: 100%;
+  background-color: rgb(25, 32, 108);
+}
+.active h4 {
+  color: white;
+  margin-top: 5px;
+}
+
+.wr {
+  margin: 30px 0px;
+  float: right;
+}
+
+/*
+
+detail
+
+*/
+.detail section:nth-of-type(1) {
+  margin-top: 70px;
+}
+
+/* title */
+
+.title {
+  padding: 10px;
+  height: 40px;
+  background-color: rgb(74, 78, 126);
+}
+.title > * {
+  color: white;
+}
+.title h4 {
+  margin: 5px 0 0 15px;
+  float: left;
+  font-size: 16px;
+}
+.title h3,
+.title h5 {
+  float: right;
+}
+
+/* content */
+
+.content {
+  height: 330px;
+  border: #eee 1px solid;
+}
+.content h5 {
+  white-space: normal;
+  margin: 20px 25px;
+  text-align: justify;
+  white-space: normal;
+}
+
+/* replies */
+.replies h1 {
+  font-size: 16px;
+  text-align: left;
+}
+.replies textarea {
+  height: 35px;
+  width: 480px;
+  float: left;
+}
+.replies button {
+  height: 50px;
+  width: 50px;
+  font-size: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: unset;
+  margin: 15px 0px 0px 20px;
+  color: rgb(25, 32, 108);
+}
+.replies button:hover {
+  background-color: rgb(25, 32, 108);
+  color: white;
+}
+.reply:nth-of-type(1) {
+  margin-top: 80px;
+  border-top: #ccc solid 1px;
+}
+.reply:last-of-type {
+  margin-bottom: 100px;
+}
+body .none h4 {
+  float: none;
+  text-align: center;
+}
+.reply a {
+  margin-left: 5px;
+  float: right;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  color: rgb(25, 32, 108);
+}
+.reply a:hover {
+  color: rgb(202, 64, 64);
+}
+/* button */
+.button a {
+  width: 85px;
+  height: 70px;
+  background-image: url(../img/guitar.png);
+  background-size: 80px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  transform: rotate(10deg);
+}
+
+.button h1 {
+  margin: 36px 39px 0px 0px;
+  font-size: 13px;
+  color: white;
+  transform: rotate(-40deg);
+  font-weight: 400;
+}
+.button {
+  display: inline-block;
+  margin: 30px 0px;
+  text-align: center;
+}
+button {
+  border: unset;
+  background-color: unset;
+  padding: 0;
+}
+/*
+
+write
+
+*/
+
+input {
+  width: 560px;
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: rgb(74, 78, 126);
+  height: 40px;
+  padding: 0px 20px;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+textarea {
+  border: #eee 1px solid;
+  width: 560px;
+  background-color: unset;
+  height: 270px;
+  overflow-y: scroll;
+  padding: 20px;
+  text-align: justify;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  color: #444;
+  font-weight: bold;
+}
+input::placeholder {
+  color: white;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.write input {
+  height: 60px;
+}
+.writer input {
+  width: 60px;
+  background-color: unset;
+  border: none;
+  height: 30px;
+  font-size: 15px;
+  margin-top: 20px;
+  padding: 0;
+  text-align: left;
+  color: #444;
+}
+.writer {
+  color: #444;
+  float: right;
+}
+.contract {
+  font-size: 15px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+}
+
+.contract label {
+  margin-top: 30px;
+  height: 40px;
+}
+.contract input {
+  width: 20px;
+  height: 20px;
+  margin: 22px 10px;
+}
+.contract label > * {
+  float: right;
+}
+.contract label::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.contract .button {
+  margin: 0px;
+}
+/* sign in/up */
+.signup label {
+  margin: 30px auto;
+  font-family: "Gloock", serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.sign > * {
+  float: left;
+}
+.sign input {
+  background-color: #ccc;
+  color: black;
+}
+.sign input::placeholder {
+  color: black;
+}
+
+.sign input:last-child {
+  background-color: unset;
+  color: rgb(25, 32, 108);
+  font-weight: 400;
+  font-family: "Gloock", serif;
+  font-size: 23px;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 20px;
+  width: 300px;
+}
+.login {
+  width: 600px;
+  height: 80px;
+}
+
+.signup a {
+  display: block;
+  color: black;
+  width: 250px;
+  margin: 20px auto;
+  font-weight: 400;
+  font-family: "Gloock", serif;
+  font-size: 23px;
+  font-weight: bold;
+  font-style: italic;
+}
+.result {
+  margin: 20px;
+  color: rgb(204, 54, 54);
+  font-weight: bold;
+  text-align: left;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+}
+.sign input:focus {
+  background-color: white;
+}
+.join {
+  width: 600px;
+  height: 80px;
+  margin-top: 30px;
+}
+
